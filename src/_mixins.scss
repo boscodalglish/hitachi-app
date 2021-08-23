@@ -1,0 +1,31 @@
+@mixin flex-display {
+    display: -webkit-box; /* OLD - iOS 6-, Safari 3.1-6, BB7 */
+    display: -ms-flexbox; /* TWEENER - IE 10 */
+    display: -webkit-flex;
+    display: flex;
+}
+
+//Margin mixin
+@mixin margin($top, $right, $bottom, $left) {
+    margin-top: $top !important;
+    margin-right: $right !important;
+    margin-bottom: $bottom !important;
+    margin-left: $left !important;
+}
+
+//Padding mixin
+@mixin padding($top, $right, $bottom, $left) {
+    padding-top: $top !important;
+    padding-right: $right !important;
+    padding-bottom: $bottom !important;
+    padding-left: $left !important;
+}
+
+//Flex Props
+@mixin flex-props($flex-direction, $flex-wrap, $justify-content, $align-items, $align-content ) {
+    flex-direction: $flex-direction;
+    flex-wrap: $flex-wrap;
+    justify-content: $justify-content;
+    align-items: $align-items;
+    align-content: $align-content
+}
